@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1280px;
+      height: 800px;
+      background: radial-gradient(circle at 80% 20%, #1e1b4b 0%, #0f172a 50%, #020617 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 80px;
+      overflow: hidden;
+      position: relative;
+    }
+    .glow-1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: rgba(16, 185, 129, 0.12);
+      filter: blur(100px);
+      top: -100px;
+      left: -100px;
+      border-radius: 50%;
+    }
+    .glow-2 {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: rgba(139, 92, 246, 0.15);
+      filter: blur(120px);
+      bottom: -150px;
+      right: 100px;
+      border-radius: 50%;
+    }
+    .left-col {
+      width: 620px;
+      z-index: 10;
+    }
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #34d399, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .lead {
+      font-size: 18px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(51, 65, 85, 0.8);
+      padding: 14px 18px;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+    }
+    .feature-icon {
+      font-size: 20px;
+      line-height: 1;
+      padding-top: 2px;
+    }
+    .feature-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 3px;
+    }
+    .feature-desc {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .right-col {
+      width: 440px;
+      display: flex;
+      justify-content: center;
+      z-index: 10;
+    }
+    .panel-wrapper {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      transform: scale(0.95);
+    }
+    .panel-img {
+      display: block;
+      width: 380px;
+      height: auto;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
+  <div class="left-col">
+    <div class="brand-pill">🎯 2026 OFFICIAL FBA ENGINE</div>
+    <h1>Real-Time Amazon<br><span>Profit & ROI Analysis</span></h1>
+    <p class="lead">Accurate FBA fee calculations right on the Amazon product page. Never overestimate margins or miss hidden fees again.</p>
+    
+    <div class="features-list">
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div>
+          <div class="feature-title">Instant Live Calculations</div>
+          <div class="feature-desc">Enter Buy Cost to see Net Profit, ROI %, and Break-even price in real time.</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📦</div>
+        <div>
+          <div class="feature-title">Package Dims & Weight Detection</div>
+          <div class="feature-desc">Automatically adopts shipping weight vs. dimensional weight (139 divisor).</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔥</div>
+        <div>
+          <div class="feature-title">2026 Official Fee Updates</div>
+          <div class="feature-desc">Includes active +3.5% fuel surcharge & Inbound Placement Service fees.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-col">
+    <div class="panel-wrapper">
+      <img class="panel-img" src="panel_screenshot.png" alt="SheetSniper Floating Panel">
+    </div>
+  </div>
+</body>
+</html>

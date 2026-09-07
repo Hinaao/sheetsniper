@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1400px;
+      height: 560px;
+      background: radial-gradient(circle at 75% 40%, #1e1b4b 0%, #0f172a 50%, #020617 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 100px;
+      overflow: hidden;
+      position: relative;
+    }
+    .glow-left {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: rgba(16, 185, 129, 0.12);
+      filter: blur(140px);
+      top: -100px;
+      left: -100px;
+      border-radius: 50%;
+    }
+    .glow-right {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      background: rgba(139, 92, 246, 0.15);
+      filter: blur(160px);
+      bottom: -150px;
+      right: 50px;
+      border-radius: 50%;
+    }
+    .content-left {
+      width: 720px;
+      z-index: 10;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      margin-bottom: 18px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #34d399, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.lead {
+      font-size: 20px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+    .tags-row {
+      display: flex;
+      gap: 12px;
+    }
+    .tag {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid rgba(51, 65, 85, 0.8);
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: #f1f5f9;
+    }
+    .content-right {
+      width: 380px;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+    }
+    .panel-preview {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      transform: scale(0.72) translateY(-20px);
+    }
+    .panel-preview img {
+      width: 400px;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-left"></div>
+  <div class="glow-right"></div>
+
+  <div class="content-left">
+    <div class="badge">🎯 ESSENTIAL 2026 OA TOOL</div>
+    <h1>Smarter FBA Sourcing.<br><span>1-Click Sync to Sheets.</span></h1>
+    <p class="lead">Accurate 2026 Amazon FBA calculations right on the product page. Stop paying $99/mo just for a calculator.</p>
+    <div class="tags-row">
+      <div class="tag">✓ 2026 Official Fee Updates</div>
+      <div class="tag">✓ 1-Click Google Drive Sync</div>
+      <div class="tag">✓ 100% Client-Side Privacy</div>
+    </div>
+  </div>
+
+  <div class="content-right">
+    <div class="panel-preview">
+      <img src="panel_screenshot.png" alt="SheetSniper Extension">
+    </div>
+  </div>
+</body>
+</html>

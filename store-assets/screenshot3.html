@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1280px;
+      height: 800px;
+      background: radial-gradient(circle at 20% 30%, #1e1b4b 0%, #0f172a 50%, #020617 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #f8fafc;
+      padding: 60px 80px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: rgba(139, 92, 246, 0.12);
+      filter: blur(140px);
+      top: -100px;
+      right: 0;
+      border-radius: 50%;
+    }
+    .left-text {
+      width: 580px;
+      z-index: 10;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: #c084fc;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.lead {
+      font-size: 17px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    .cards-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .bullet-card {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(51, 65, 85, 0.8);
+      padding: 14px 18px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .bullet-card h4 {
+      font-size: 15px;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+    .bullet-card p {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .right-box {
+      width: 480px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      color: #0f172a;
+      z-index: 10;
+    }
+    .box-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+    .box-header h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .tag-2026 {
+      background: #f3e8ff;
+      color: #7e22ce;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .fee-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e2e8f0;
+      font-size: 14px;
+      color: #334155;
+    }
+    .fee-row strong {
+      font-size: 15px;
+      color: #0f172a;
+    }
+    .fee-row.highlight {
+      background: #f8fafc;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      margin: 4px 0;
+    }
+    .total-box {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 14px;
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .total-box span { font-weight: 700; font-size: 14px; color: #475569; }
+    .total-box strong { font-size: 20px; font-weight: 800; color: #0f172a; }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="left-text">
+    <div class="badge">🔥 2026 COMPREHENSIVE AUDIT</div>
+    <h1>Stop Losing Margins to<br><span>2026 Hidden Fees</span></h1>
+    <p class="lead">Amazon quietly updated FBA formulas. SheetSniper tracks every dollar of fulfillment, placement, and fuel surcharges so you never buy unprofitable stock.</p>
+    
+    <div class="cards-stack">
+      <div class="bullet-card">
+        <span style="font-size:24px;">⛽</span>
+        <div>
+          <h4>+3.5% Fuel & Inflation Surcharge</h4>
+          <p>Automatically added to fulfillment rates according to official 2026 policy.</p>
+        </div>
+      </div>
+      <div class="bullet-card">
+        <span style="font-size:24px;">🚚</span>
+        <div>
+          <h4>Inbound Placement Service Modes</h4>
+          <p>Toggle between Minimal Split ($0.21 - $0.38+) and Optimized ($0) in 1 click.</p>
+        </div>
+      </div>
+      <div class="bullet-card">
+        <span style="font-size:24px;">📉</span>
+        <div>
+          <h4>Low-Inventory Fee Toggle</h4>
+          <p>Simulate historical inventory level fees (+$0.32) before shipping stock.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-box">
+    <div class="box-header">
+      <h3>2026 Amazon Fees Breakdown</h3>
+      <span class="tag-2026">2026 Active Table</span>
+    </div>
+    <div class="fee-row">
+      <span>Referral Fee (15%):</span>
+      <strong>$3.75</strong>
+    </div>
+    <div class="fee-row highlight">
+      <div>
+        <span>FBA Fulfillment Fee (LARGE_STANDARD):</span>
+        <div style="font-size:11px;color:#7c3aed;margin-top:2px;">Includes 3.5% Fuel Surcharge</div>
+      </div>
+      <strong style="color:#7c3aed;">$4.64</strong>
+    </div>
+    <div class="fee-row highlight">
+      <div>
+        <span>Inbound Placement Fee:</span>
+        <div style="font-size:11px;color:#0284c7;margin-top:2px;">Minimal Split Mode</div>
+      </div>
+      <strong style="color:#0284c7;">$0.27</strong>
+    </div>
+    <div class="fee-row">
+      <span>Inbound Shipping ($0.30/lb):</span>
+      <strong>$0.36</strong>
+    </div>
+    <div class="fee-row">
+      <span>Prep Cost:</span>
+      <strong>$0.20</strong>
+    </div>
+    <div class="total-box">
+      <span>Total Estimated Fees:</span>
+      <strong>$9.22</strong>
+    </div>
+  </div>
+</body>
+</html>

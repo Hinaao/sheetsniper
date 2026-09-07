@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1280px;
+      height: 800px;
+      background: radial-gradient(circle at 50% 10%, #1e293b 0%, #0f172a 60%, #020617 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #f8fafc;
+      padding: 50px 70px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .glow {
+      position: absolute;
+      width: 800px;
+      height: 400px;
+      background: rgba(16, 185, 129, 0.1);
+      filter: blur(140px);
+      top: 50px;
+      left: 240px;
+      border-radius: 50%;
+    }
+    .header-center {
+      text-align: center;
+      z-index: 10;
+      margin-bottom: 36px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      margin-bottom: 8px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #34d399, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.lead {
+      font-size: 17px;
+      color: #94a3b8;
+    }
+    .content-area {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      z-index: 10;
+    }
+    .push-card {
+      width: 330px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .push-card h3 {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .push-card p {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+    .btn-push-mock {
+      background: #10b981;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+      margin-bottom: 12px;
+    }
+    .toast-mock {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-size: 12px;
+      text-align: center;
+      padding: 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .sheet-mock {
+      flex: 1;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .sheet-header {
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sheet-icon { font-size: 18px; }
+    .sheet-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .sheet-tag {
+      background: #e2e8f0;
+      color: #475569;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11.5px;
+      color: #1e293b;
+    }
+    th {
+      background: #f1f5f9;
+      padding: 9px 10px;
+      text-align: left;
+      font-weight: 700;
+      border-bottom: 1px solid #cbd5e1;
+      border-right: 1px solid #e2e8f0;
+      white-space: nowrap;
+    }
+    td {
+      padding: 9px 10px;
+      border-bottom: 1px solid #f1f5f9;
+      border-right: 1px solid #f1f5f9;
+      white-space: nowrap;
+    }
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+    .profit-positive {
+      color: #15803d;
+      font-weight: 700;
+    }
+    .roi-badge {
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="header-center">
+    <div class="badge">🚀 1-CLICK CLOUD LOGGING</div>
+    <h1>Direct Sourcing Sync to <span>Google Sheets</span></h1>
+    <p class="lead">Appends 18 sourcing columns directly to your Google Drive. 100% Client-Side. Zero third-party databases.</p>
+  </div>
+
+  <div class="content-area">
+    <div class="push-card">
+      <h3>⚡ One-Click Push</h3>
+      <p>Save profitable leads in less than 1 second while browsing Amazon.</p>
+      <div class="btn-push-mock">⚡ Push to Google Sheets</div>
+      <div class="toast-mock">✓ Saved to "SheetSniper Sourcing Log"!</div>
+    </div>
+
+    <div class="sheet-mock">
+      <div class="sheet-header">
+        <span class="sheet-icon">📊</span>
+        <span class="sheet-name">SheetSniper Sourcing Log</span>
+        <span class="sheet-tag">Google Drive Synced</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Date Added</th>
+            <th>ASIN</th>
+            <th>Product Title</th>
+            <th>Buy Cost</th>
+            <th>Sell Price</th>
+            <th>Net Profit</th>
+            <th>ROI %</th>
+            <th>Break Even</th>
+            <th>Placement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sep 7, 2026</td>
+            <td><strong>B0DSC87JH7</strong></td>
+            <td>Women's Short Sleeve Fitted Top</td>
+            <td>$7.50</td>
+            <td>$22.99</td>
+            <td class="profit-positive">+$6.85</td>
+            <td><span class="roi-badge">91.3%</span></td>
+            <td>$13.42</td>
+            <td>$0.21</td>
+          </tr>
+          <tr>
+            <td>Sep 7, 2026</td>
+            <td><strong>B09X8K9L12</strong></td>
+            <td>Insulated Stainless Tumbler 30oz</td>
+            <td>$11.20</td>
+            <td>$32.50</td>
+            <td class="profit-positive">+$10.45</td>
+            <td><span class="roi-badge">93.3%</span></td>
+            <td>$18.60</td>
+            <td>$0.27</td>
+          </tr>
+          <tr>
+            <td>Sep 7, 2026</td>
+            <td><strong>B08N5WRWNW</strong></td>
+            <td>Ergonomic Vertical Optical Mouse</td>
+            <td>$9.80</td>
+            <td>$27.99</td>
+            <td class="profit-positive">+$8.12</td>
+            <td><span class="roi-badge">82.9%</span></td>
+            <td>$16.25</td>
+            <td>$0.21</td>
+          </tr>
+          <tr>
+            <td>Sep 7, 2026</td>
+            <td><strong>B07X9Q4M10</strong></td>
+            <td>Organic Bamboo Kitchen Cutting Board</td>
+            <td>$14.00</td>
+            <td>$38.90</td>
+            <td class="profit-positive">+$11.30</td>
+            <td><span class="roi-badge">80.7%</span></td>
+            <td>$23.10</td>
+            <td>$0.38</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
