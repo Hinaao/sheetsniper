@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheetSniper - 2026 Amazon FBA Calculator & Google Sheets Sync</title>
+  <link rel="icon" type="image/png" href="icons/icon48.png">
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-dark: #059669;
+      --accent: #8b5cf6;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .logo-icon { font-size: 24px; }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 20px;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: #ffffff; }
+    .hero {
+      max-width: 900px;
+      margin: 80px auto 40px auto;
+      text-align: center;
+      padding: 0 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--primary);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #34d399, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px auto;
+    }
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: #283548;
+    }
+    .grid {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover {
+      border-color: var(--primary);
+    }
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .feature-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    footer {
+      margin-top: auto;
+      padding: 32px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: underline; }
+    footer a:hover { color: #ffffff; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo-wrap">
+      <span class="logo-icon">🎯</span>
+      <span>SheetSniper</span>
+    </a>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://github.com/Hinaao/sheetsniper" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">🚀 Updated for 2026 Amazon Fee Schedules</div>
+      <h1>Smarter FBA Sourcing.<br><span>1-Click Sync to Google Sheets.</span></h1>
+      <p class="subtitle">
+        Accurate real-time Amazon FBA calculations right on the product page. Stop paying $99/mo just for an FBA calculator and stop copying ASINs manually.
+      </p>
+      <div class="cta-group">
+        <a href="https://github.com/Hinaao/sheetsniper" class="btn btn-primary" target="_blank">
+          <span>Get Extension (Chrome Web Store)</span>
+        </a>
+        <a href="privacy.html" class="btn btn-secondary">
+          <span>Privacy Policy</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>100% Updated 2026 Rates</h3>
+        <p>Includes the active 3.5% Fuel Surcharge, Inbound Placement Service fees (Minimal Split vs Optimized), and 2oz standard size tiers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>1-Click Google Sheets Sync</h3>
+        <p>Push winning products directly to your own Google Sheet with 18 detailed sourcing metrics: ASIN, profit, ROI, break-even, dims, and fees.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>100% Client-Side Privacy</h3>
+        <p>Zero external servers. Your product sourcing data connects directly between your browser and your own Google Drive.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SheetSniper. All rights reserved. · <a href="privacy.html">Privacy Policy</a> · Built for Amazon Online Arbitrage Sellers.</p>
+  </footer>
+</body>
+</html>

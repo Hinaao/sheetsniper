@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SheetSniper Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title-wrap">
+      <span class="logo">🎯</span>
+      <h1>SheetSniper</h1>
+    </div>
+    <span class="version-badge">2026 FBA</span>
+  </div>
+
+  <div class="content">
+    <div class="card">
+      <div class="card-title">Google Sheets Sync</div>
+      <div id="status-container" class="status-box">
+        <span id="sync-status-indicator" class="dot disconnected"></span>
+        <span id="sync-status-text">Checking connection...</span>
+      </div>
+      <div id="sheet-link-container" class="sheet-link-wrap" style="display: none;">
+        <a id="sheet-link" href="#" target="_blank">Open "SheetSniper Sourcing Log" ↗</a>
+      </div>
+      <div class="btn-group">
+        <button id="btn-auth-test" class="btn btn-primary">Connect / Test Auth</button>
+        <button id="btn-reset-sheet" class="btn btn-secondary" style="display: none;">Reset Sheet</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Membership & Plan</div>
+      <div class="status-box">
+        <span id="plan-status-indicator" class="dot connected"></span>
+        <span id="plan-status-text">Checking plan...</span>
+      </div>
+      <div class="btn-group" style="margin-top: 8px;">
+        <button id="btn-upgrade-plan" class="btn btn-primary" style="background:#7c3aed;">Upgrade to Pro ($9.99/mo)</button>
+        <button id="btn-manage-plan" class="btn btn-secondary" style="display: none;">Manage Plan</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">2026 FBA Defaults</div>
+      <div class="form-row">
+        <label for="prep-cost">Default Prep Cost ($)</label>
+        <input type="number" id="prep-cost" value="0.20" step="0.05" />
+      </div>
+      <div class="form-row">
+        <label for="shipping-rate">Inbound Shipping ($/lb)</label>
+        <input type="number" id="shipping-rate" value="0.30" step="0.05" />
+      </div>
+      <div class="form-row">
+        <label for="split-mode">Placement Fee Mode</label>
+        <select id="split-mode">
+          <option value="MINIMAL_SPLIT" selected>Minimal Split (Standard)</option>
+          <option value="OPTIMIZED">Optimized (5+ Splits / $0 Fee)</option>
+        </select>
+      </div>
+      <button id="btn-save-settings" class="btn btn-secondary" style="margin-top: 8px;">Save Settings</button>
+      <div id="save-msg" class="save-msg"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Zero server cost · 100% Client-side Direct Sync</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
