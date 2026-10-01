@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "SheetSniper - 2026 FBA & Google Sheets Sync",
-  "version": "1.0.0",
-  "description": "Accurate 2026 Amazon FBA fee calculator and 1-click sync to Google Sheets for Online Arbitrage sellers.",
+  "version": "1.0.1",
+  "description": "2026 Amazon FBA Profit Calculator & 1-Click Google Sheets Sync for Online Arbitrage (OA) & Wholesale. No Seller Central login needed.",
   "permissions": [
     "identity",
     "storage"
